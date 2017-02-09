@@ -20,18 +20,7 @@
         <Grid.DataContext>
             <viewModel:EventViewModel/>
         </Grid.DataContext>
-        <ListView x:Name="listView" Grid.ColumnSpan="3" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="620" Margin="25,10,25,0" VerticalAlignment="Top" ItemsSource="{Binding CatalogSingleton.list}" SelectedIndex="{Binding SelectedEventIndex, Mode=TwoWay}" >
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel HorizontalAlignment="Center">
-                        <TextBlock Text="{Binding Name}" FontSize="35"/>
-                        <TextBlock Text="{Binding Time}" FontSize="20"/>
-                        <TextBlock Text="{Binding Description}" FontSize="15"/>
-                        <TextBlock Text="{Binding ID}" FontSize="20"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <ListView x:Name="listView" Grid.ColumnSpan="3" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="620" Margin="25,10,25,0" VerticalAlignment="Top" SelectedIndex="{Binding SelectedEventIndex, Mode=TwoWay}" />
         <Button Grid.Column="3" Command="{Binding DeleteEventCommand}"  Width="50" Height="50" HorizontalAlignment="Center" BorderBrush="Black" Background="Transparent" VerticalAlignment="Bottom" Margin="0,0,0,40">
 
             <Button.Template>
