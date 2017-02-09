@@ -1,0 +1,1 @@
+C:\Users\Cristian Patras\Desktop\Application\App1.csproj;x64
