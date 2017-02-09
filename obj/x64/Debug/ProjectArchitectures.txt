@@ -1,0 +1,1 @@
+C:\Users\Universe\Documents\Application\App1.csproj;x64
